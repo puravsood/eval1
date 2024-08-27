@@ -1,0 +1,18 @@
+def check_case(str):
+    upper_case=' '
+    lower_case=' '
+    for i in str:
+        if (i.isupper()=="True"):
+            upper_case=upper_case+i
+        elif (i.islower()=="True"):
+            lower_case+=i
+        else:
+            continue
+    print(upper_case,lower_case)
+    return upper_case,lower_case
+
+a=input()
+upper, lower=check_case(a)
+   
+print("Uppercase charachters are: ", upper)
+print("Lowercase characters are: ", lower)
