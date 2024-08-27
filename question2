@@ -1,0 +1,17 @@
+a="can you can a can as a canner can can a can"
+check={}
+for i in a:
+    if i not in check:
+        check[i]=1
+    elif i in check:
+        check[i]+=1
+print(check)
+print("Most repeated alphabet is : ",check['a'])
+list=a.split(' ')
+check_word={}
+for i in list:
+    if i not in check_word:
+        check_word[i]=1
+    elif i in check_word:
+        check_word[i]+=1
+print(check_word)
